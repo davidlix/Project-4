@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+ <!-- Xiaofeng David Lin
+      November 7th 2012
+      Video Game Project 
+      Project 4 - v0.6-->
+    
+    <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <meta name="author"             content="Xiaofeng David Lin" />
+      <script type="text/JavaScript" src="locations.js"></script>
+      <link rel="stylesheet" type="text/css" href="pj4.css" media="screen"/> 
+      <title>CS Video Game</title>    
+    </head>
+    
+    <body onload = "init()">
+      <h1 class="csstyle"> Welcome to David Lin's Video Game </h1>
+      <h2 class="dave"> CMPT 120 and CMSC 120 - Fall 2012</h2>
+      <h3 class="welcome">Welcome to Stranded Island text adventure Game! Have Fun!</h3>
+      
+      <textarea class= "textarea" id="taGame" rows="20" cols= "55" >Starting Location: Tent
+      You are the only survivor in the plane crash! 
+      You woke up at this unknown remote island. 
+      Nobody knows where you are! You have to survive 
+      on your own on this stranded island!
+      </textarea>
+      
+      <p>
+      <span style= "color: black;">Please Enter Command here </span>
+      <input type="text" 
+           size= "30"
+           id="txtCommand" 
+           value="">
+      
+      <input type="button"
+           value="Go"
+           onclick="btn_go_click()" 
+           id="btnGo">
+    </p>
+    
+    <p>
+      <input type="button"  
+             value="North"
+             onclick="btn_north()" 
+             id="btnNorth">
+     <br>
+     <br>
+     
+      <input type="button"  
+             value="West"
+             onclick="btn_west()" 
+             id="btnWest">
+             
+      <br>
+      <br>
+
+      <input type="button"  
+             value="East"
+             onclick="btn_east()" 
+             id="btnEast">      
+     <br>
+     <br>
+     
+      <input type="button"  
+             value="South"
+             onclick="btn_south()" 
+             id="btnSouth">  
+     <br>      <br>
+   
+    
+    <span id="scoreCounter"> Your current score is: <span id="score"> 0  </span> </span>
+      </p>
+    <a href="mailto:xiaofeng.lin1@marist.edu">Email</a>
+    </body>
+</html>
